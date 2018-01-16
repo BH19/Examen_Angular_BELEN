@@ -1,0 +1,15 @@
+<div>
+  
+    <!--=======================================================================|
+    | Yellow Path                                                              |
+    |==========================================================================|
+    | Un clic sobre la categoría debería enviar un evento al componente padre. |
+    |========================================================================-->
+    
+    <span class="blink-font" *ngFor="let category of categories"
+    (click)="seleccionCategory(category.name)">
+    {{ category.name }}
+    </span>
+  
+  </div>
+  
